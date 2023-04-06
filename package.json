@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "jquery": "^3.6.4"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
