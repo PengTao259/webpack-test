@@ -12,6 +12,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     mode: 'development', // mode 用来指定构建模式  development开发版本 production生产阶段
     // devtool: 'eval-source-map',
+    devtool: 'nosources-source-map',
     entry: path.join(__dirname, './src/index1.js'),  // 指定要处理的文件
     output: {
         // 出口目录
@@ -49,6 +50,11 @@ module.exports = {
             }
             
         ]
+    },
+    resolve: {
+        alias: {
+            '@': path.join(__dirname, '/src/')
+        }
     }
     
 }

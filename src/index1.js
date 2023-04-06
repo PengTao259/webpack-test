@@ -4,6 +4,11 @@ import $ from 'jquery'
 import './css/index.css'
 import './css/index.less'
 import logo from './images/logo.png'
+
+import info from './info'
+
+console.log(info);
+
 console.log(logo,'sxsxss');
 $(function () {
     // 实现奇数行变色
